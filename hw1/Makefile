@@ -1,4 +1,4 @@
-.PHONY: all clean run
+.PHONY: all clean run test
 all: # The default target
 
 # tool macros
@@ -19,3 +19,6 @@ clean:
 
 run: $(TARGET)
 	@./$(TARGET)
+
+test: $(TARGET)
+	python test.py
