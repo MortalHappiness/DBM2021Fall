@@ -85,7 +85,7 @@ compute_regression_line_slope(const vector<pair<double, double>> &points) {
 }
 
 void read_file(const string &filename, vector<Record *> &records) {
-    std::fstream fin(filename);
+    std::ifstream fin(filename);
     string line, temp;
 
     // Skip header
